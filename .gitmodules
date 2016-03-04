@@ -1,0 +1,3 @@
+[submodule "bitsurv-core"]
+	path = bitsurv-core
+	url = git@github.com:agroff/bitsurv-core.git
