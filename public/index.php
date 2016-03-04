@@ -1,5 +1,8 @@
 <?php
 
-echo "hi";
+use BitSurv\Bootstrap\Bootstrap;
 
-var_dump($_SERVER);
+require __DIR__ . '/../vendor/autoload.php';
+
+$bootstrap = new Bootstrap();
+$bootstrap->main();

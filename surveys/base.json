@@ -1,0 +1,29 @@
+{
+    "listen"    : "localhost:8585",
+
+    "options" : {
+        "has-back" : true,
+        "disable-back" : false
+    },
+
+    "questions" : {
+        "intro" : {
+            "type"       : "text",
+            "header"     : "Welcome to BitSurv.",
+            "sub-header" : "------------------------------",
+            "body"       : "We think BitSurv is the best way to get your surveys and research projects up and running.",
+            "footer"     : "You're looking at your first survey already. Lets take a closer look at how this all works."
+        }
+    },
+
+    "pages" : [
+        {
+            "id" : "this-is-optional",
+            "questions" : [
+                "intro"
+            ],
+
+            "footer" : "The json for this page is in base.json. To see the JSON for the rest of the survey, `check out welcmoe.json`."
+        }
+    ]
+}

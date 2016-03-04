@@ -1,0 +1,28 @@
+{
+    "listen" : "localhost:8585/welcome",
+
+    "title" : "Welcome to BitSurv",
+
+    "extends" : "base",
+
+    "questions" : {
+        "dry-text" : {
+            "type"       : "text",
+            "header"     : "Stay DRY with Inheritance!",
+            "body"       : [
+                "The Goal of BitSurv is to write highly customizable surveys as fast as possible. To that end, our philosophy is write it once, and update it one place.",
+                "To achieve this we use inheritance. This survey, `welcome` extends the survey `base`, and will overwrite any common properties, while intelligently merging pages and question sets."
+            ]
+        }
+    },
+
+    "pages" : [
+        {
+            "questions" : [
+                "dry-text"
+            ],
+
+            "footer" : "Just a page footer"
+        }
+    ]
+}
