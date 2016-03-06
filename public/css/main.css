@@ -1,0 +1,17 @@
+.container{
+    max-width:900px;
+}
+.question-header{
+    padding:10px 0;
+    border-bottom:1px solid #ccc;
+}
+.button-container{
+    padding:20px;
+    text-align: center;
+}
+.button-container button{
+    margin: 10px;
+}
+.question-text-body{
+    padding:6px 0;
+}

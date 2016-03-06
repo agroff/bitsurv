@@ -1,28 +1,37 @@
 {
-    "listen" : "localhost:8585/welcome",
+    "listen"    : "localhost:8585/welcome",
 
-    "title" : "Welcome to BitSurv",
+    "title"     : "Welcome to BitSurv",
+    "sub-title" : "A Survey Engine for Developers",
 
-    "extends" : "base",
+    "extends"   : "base",
 
     "questions" : {
         "dry-text" : {
-            "type"       : "text",
-            "header"     : "Stay DRY with Inheritance!",
-            "body"       : [
+            "type"   : "text",
+            "header" : "Stay DRY with Inheritance!",
+            "body"   : [
                 "The Goal of BitSurv is to write highly customizable surveys as fast as possible. To that end, our philosophy is write it once, and update it one place.",
                 "To achieve this we use inheritance. This survey, `welcome` extends the survey `base`, and will overwrite any common properties, while intelligently merging pages and question sets."
             ]
+        },
+        "test"     : {
+            "type"   : "text",
+            "header" : "Test Page",
+            "body"   : "This is just a test page, you gotta believe me"
         }
     },
 
-    "pages" : [
+    "pages"     : [
         {
             "questions" : [
                 "dry-text"
             ],
 
-            "footer" : "Just a page footer"
+            "footer"    : "!template /custom/page-3-footer.php"
+        },
+        {
+            "questions" : [ "test" ]
         }
     ]
 }
