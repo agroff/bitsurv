@@ -1,29 +1,36 @@
 {
     "listen"    : "localhost:8585",
 
-    "options" : {
-        "has-back" : true,
+    "options"   : {
+        "has-back"     : true,
         "disable-back" : false
     },
 
     "questions" : {
-        "intro" : {
-            "type"       : "text",
-            "header"     : "Getting Started",
-            "body"       : "We think BitSurv is the best way to get your surveys and research projects up and running.",
-            "footer"     : "You're looking at your first survey already. Lets take a closer look at how this all works."
+        "intro"      : {
+            "type"   : "text",
+            "header" : "Getting Started",
+            "body"   : "We think BitSurv is the best way to get your surveys and research projects up and running.",
+            "footer" : "You're looking at your first survey already. Lets take a closer look at how this all works."
+        },
+        "test-field" : {
+            "type"        : "text-field",
+            "header"      : "Age",
+            "placeholder" : "Your Age...",
+            "body"        : "How old are you?"
         }
     },
 
-    "pages" : [
+    "pages"     : [
         {
-            "id" : "this-is-optional",
+            "id"        : "this-is-optional",
             "questions" : [
                 "intro",
-                "dry-text"
+                "dry-text",
+                "test-field"
             ],
 
-            "footer" : "The json for this page is in base.json. To see the JSON for the rest of the survey, `check out welcmoe.json`."
+            "footer"    : "The json for this page is in base.json. To see the JSON for the rest of the survey, `check out welcmoe.json`."
         }
     ]
 }
