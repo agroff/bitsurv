@@ -19,4 +19,9 @@
  
       composer install
  
+ Create your config file and edit it
+ 
+      cp config.sample.php config.php
+      nano config.sample.php #only if you need to change something in here
+ 
  
