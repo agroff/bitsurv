@@ -7,6 +7,6 @@ class ImageSelection extends BasePlugin{
 
     public function initialize(PluginSystem $pluginSystem)
     {
-        dbg('image selection init');
+        //dbg('image selection init');
     }
 }
