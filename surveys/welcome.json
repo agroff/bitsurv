@@ -1,5 +1,5 @@
 {
-    "listen"    : "localhost:8585/welcome",
+    "listen"    : "/welcome",
 
     "title"     : "Welcome to BitSurv",
     "sub-title" : "A Survey Engine for Developers",
