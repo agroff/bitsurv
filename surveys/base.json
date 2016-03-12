@@ -13,11 +13,42 @@
             "body"   : "We think BitSurv is the best way to get your surveys and research projects up and running.",
             "footer" : "You're looking at your first survey already. Lets take a closer look at how this all works."
         },
+
         "test-field" : {
             "type"        : "text-field",
             "header"      : "Age",
             "placeholder" : "Your Age...",
             "body"        : "How old are you?"
+        },
+
+        "test-field-two" : {
+            "extends" : "test-field",
+            "body"    : "How old is your dog?",
+            "header"  : false
+        },
+
+        "agree-base" : {
+            "type" : "radio",
+            "header" : false,
+            "body" : false,
+            "choices" : {
+                "a" : "Strongly Agree",
+                "b" : "Somewhat Agree",
+                "c" : "Neither Agree nor Disagree",
+                "d" : "Somewhat Disagree",
+                "e" : "Strongly Disagree"
+            }
+        },
+
+        "agree-cigs-good" : {
+            "header" : "Cigarettes Opinion",
+            "extends" : "agree-base",
+            "body" : "Cigarettes are good."
+        },
+
+        "agree-cigs-bad" : {
+            "extends" : "agree-base",
+            "body" : "Cigarettes are bad."
         }
     },
 
@@ -27,7 +58,10 @@
             "questions" : [
                 "intro",
                 "dry-text",
-                "test-field"
+                "test-field",
+                "test-field-two",
+                "agree-cigs-good",
+                "agree-cigs-bad"
             ],
 
             "footer"    : "The json for this page is in base.json. To see the JSON for the rest of the survey, `check out welcmoe.json`."
